@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Инженерное бюро "Цаммит"</title>
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/accordion.css">
+	<link rel="stylesheet" href="../css/menu.css">
 	<link rel="stylesheet" href="../css/servises.css">
 </head>
 <body>
@@ -25,156 +25,97 @@
             </div>
         </div>
 
-        <nav>
+		<div class="menu-burger__header">
+            <span></span>
+        </div>
+
+        <!-- <nav>
 			<a href="index.html">О КОМПАНИИ</a>
 			<a href="systems.html">ИНЖЕНЕРНЫЕ СИСТЕМЫ</a>
 			<a href="#" class="active">УСЛУГИ</a>
 			<a href="projects.html">ПРОЕКТЫ</a>
 			<a href="vacancy.html">ВАКАНСИИ</a>
-		</nav>
+		</nav> -->
+
+		<nav class="header__nav">
+            <ul class="menu header__menu">
+                <li><a href="index.html">О КОМПАНИИ</a></li>
+                <li><a href="systems.html">ИНЖЕНЕРНЫЕ СИСТЕМЫ</a></li>
+                <li><a href="#" class="active">УСЛУГИ</a></li>
+                <li><a href="projects.html">ПРОЕКТЫ</a></li>
+                <li><a href="vacancy.html">ВАКАНСИИ</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-		<div class="accordion">
-			<div class="trigger">
-				<input type="checkbox" id="checkbox-1" name="checkbox-1" />
-				<label for="checkbox-1" class="checkbox">
-					Разработка проектной и рабочей документации по инженерным системам <i></i>
-				</label>
-				<div class="content">
-					<h3>Разработка проектной и рабочей документации по инженерным системам</h3>
-					<p>типа описание</p> 
-					<img src="../img/pic117.jpg" alt="">
-				</div>
-			</div>
-			
-			<div class="trigger">
-				<input type="checkbox" id="checkbox-2" name="checkbox-2" />
-				<label for="checkbox-2" class="checkbox">
-					Технические консультации <i></i>
-				</label>
-				<div class="content">
-					<h3>Технические консультации</h3>
-					<p>типа описание</p> 
-					<img src="../img/pic117.jpg" alt="">
-				</div>
-			</div>
-			
-			<div class="trigger">
-				<input type="checkbox" id="checkbox-3" name="checkbox-3" />
-				<label for="checkbox-3" class="checkbox">
-					Сбор данных и подготовка ТЗ <i></i>
-				</label>
-				<div class="content">
-					<h3>Сбор данных и подготовка ТЗ</h3>
-					<p>типа описание</p> 
-					<img src="../img/pic117.jpg" alt="">
-				</div>
-			</div>
-
-			<div class="trigger">
-				<input type="checkbox" id="checkbox-4" name="checkbox-4" />
-				<label for="checkbox-4" class="checkbox">
-					Экспертиза проектов <i></i>
-				</label>
-				<div class="content">
-					<h3>Экспертиза проектов</h3>
-					<p>По желанию Заказчика/Инвестора наши специалисты выполнят проверку готовых проектов на соответствие российским нормам, проведут ревизию документации и подготовят заключение по стоимости материалов и оборудования.</p> 
-					<img src="../img/pic117.jpg" alt="">
-				</div>
-			</div>
-
-			<div class="trigger">
-				<input type="checkbox" id="checkbox-5" name="checkbox-5" />
-				<label for="checkbox-5" class="checkbox">
-					Подготовка тендерной документации <i></i>
-				</label>
-				<div class="content">
-					<h3>Подготовка тендерной документации</h3>
-					<p>Для участия проектных и строительных организаций в конкурсных проектах, а также для Заказчика/Инвестора мы подготовим пакет тендерной документации, включая перечень выполняемых работ, и другие необходимые документы. Также на профессиональном уровне мы проверим ваши контрактные документы на соответствие проектным решениям.</p> 
-					<img src="../img/pic117.jpg" alt="">
-				</div>
-			</div>
-			
-			<div class="trigger">
-				<input type="checkbox" id="checkbox-6" name="checkbox-6" />
-				<label for="checkbox-6" class="checkbox">
-					Авторский и технический надзор <i></i>
-				</label>
-				<div class="content">
-					<h3>Авторский и технический надзор</h3>
-					<p>типа описание</p> 
-					<img src="../img/pic117.jpg" alt="">
-				</div>
-			</div>
-			
-			<div class="trigger">
-				<input type="checkbox" id="checkbox-7" name="checkbox-7" />
-				<label for="checkbox-7" class="checkbox">
-					Сдача объекта в эксплуатацию <i></i>
-				</label>
-				<div class="content">
-					<h3>Сдача объекта в эксплуатацию</h3>
-					<p>Поготовка пакета приемо-сдаточной документации объекта, включая консультации по оформлению актов сдачи-приемки оборудования, протоколов испытаний и других необходимых документов в соответствии с нормативными требованиями, а также с учетом требований муниципальных органов и служб эксплуатации.</p> 
-					<img src="../img/pic117.jpg" alt="">
-				</div>
-			</div>
-		</div> 
-		
-		<div class="all">
-			<input type="checkbox" name="all" id="all" />
-			<label for="all"></label>
-		</div> 
-    </main>
-
-	<div class="preview">
 		<div class="container">
 			<div class="tabcontainer">
 				<div class="tabheader">
-					<h3>Выберите стиль питания</h3>
+					<!-- <h3>Выберите услугу:</h3> -->
 					<div class="tabheader__items">
 						<div class="tabheader__item">Разработка проектной и рабочей документации по инженерным системам</div>
 						<div class="tabheader__item">Технические консультации</div>
 						<div class="tabheader__item tabheader__item_active">Сбор данных и подготовка ТЗ</div>
 						<div class="tabheader__item">Экспертиза проектов</div>
+						<div class="tabheader__item">Подготовка тендерной документации</div>
+						<div class="tabheader__item">Авторский и технический надзор</div>
+						<div class="tabheader__item">Сдача объекта в эксплуатацию</div>
 					</div>
 				</div>
 
 				<div class="tabcontent">
-					<img src="../img/pic113.jpg" alt="vegy">
+					<img src="../img/screen_img.jpg" alt="img">
 					<div class="tabcontent__descr">
 						Разработка проектной и рабочей документации по инженерным системам
 					</div>
 				</div>
-					<div class="tabcontent">
-					<img src="../img/pic117.jpg" alt="elite">
+				<div class="tabcontent">
+					<img src="../img/servises_pexels-fauxels-3183186.jpg" alt="img">
 					<div class="tabcontent__descr">
 						Меню “Премиум” - мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!                                     
 					</div>
 				</div>
-					<div class="tabcontent">
-					<img src="../img/pic268.jpg" alt="post">
+				<div class="tabcontent">
+					<img src="../img/servises_tz.JPG" alt="img">
 					<div class="tabcontent__descr">
 						Наше специальное “Постное меню” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения. Полная гармония с собой и природой в каждом элементе! Все будет Ом!                                     
 					</div>
 				</div>
 				<div class="tabcontent">
-					<img src="../img/pic129.jpg" alt="hamburger">
+					<img src="../img/servises_pexels-anna-shvets-5324973.jpg" alt="img">
 					<div class="tabcontent__descr">
-						Меню "Сбалансированное" - это соответствие вашего рациона всем научным рекомендациям. Мы тщательно просчитываем вашу потребность в к/б/ж/у и создаем лучшие блюда для вас.
+						По желанию Заказчика/Инвестора наши специалисты выполнят проверку готовых проектов на соответствие российским нормам, проведут ревизию документации и подготовят заключение по стоимости материалов и оборудования.
 					</div>
-				</div> 				
+				</div> 	
+				<div class="tabcontent">
+					<img src="../img/servises_01.jpg" alt="img">
+					<div class="tabcontent__descr">
+						Для участия проектных и строительных организаций в конкурсных проектах, а также для Заказчика/Инвестора мы подготовим пакет тендерной документации, включая перечень выполняемых работ, и другие необходимые документы. Также на профессиональном уровне мы проверим ваши контрактные документы на соответствие проектным решениям.
+					</div>
+				</div>
+				<div class="tabcontent">
+					<img src="../img/servises_pexels-jeshootscom-834892.jpg" alt="img">
+					<div class="tabcontent__descr">
+						Разработка проектной и рабочей документации по инженерным системам
+					</div>
+				</div>
+				<div class="tabcontent">
+					<img src="../img/servises_pexels-mikhail-nilov-6893373.jpg" alt="img">
+					<div class="tabcontent__descr">
+						Поготовка пакета приемо-сдаточной документации объекта, включая консультации по оформлению актов сдачи-приемки оборудования, протоколов испытаний и других необходимых документов в соответствии с нормативными требованиями, а также с учетом требований муниципальных органов и служб эксплуатации.
+					</div>
+				</div>			
 			</div>
-			<div class="preview__life">Живи полной жизнью!</div>
 		</div>
-	</div>
+    </main>
 
     <footer>
         <h4>ООО «Инженерное бюро Цаммит» с 2005г.</h4>     
     </footer>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-    <script src="../js/accordion.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/menu.js"></script> 
 	<script src="../js/tabs.js"></script>
 </body>
 </html>

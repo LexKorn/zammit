@@ -37,27 +37,30 @@ header .contacts a:hover {
 
 
 
-nav {
+nav ul {
 	height: 40px;
 	display: flex;
     justify-content: center;
 	align-items: center;
     margin: 10px auto 0;
 }
-nav a {
+nav ul {
+    list-style-type: none;
+}
+nav ul li a {
 	display: block;
 	padding: 0 30px;
 	font-size: 20px;
 	box-sizing: border-box;
 }
-nav a:link,
+nav ul li a:link,
 nav a:visited {
 	color: #747980;
 	text-decoration: none;
     font-weight: bold;
 }
-nav a:hover,
-nav a.active {
+nav ul li a:hover,
+nav ul li a.active {
     color: teal;
 }
 

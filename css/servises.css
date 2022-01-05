@@ -1,30 +1,35 @@
+main {
+    width: 90vw;
+    padding: 0;
+    padding-bottom: 100px;
+    position: relative;
+    margin-bottom: 50px;
+    /* border: 1px solid red;     */
+}
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto
-}
-
-.preview {
-    padding: 28px 0 100px 0;
-    position: relative
-}
-
-.preview__life {
-    font-weight: 700;
-    font-size: 20px;
-    margin-left: 35px;
-    margin-top: 35px
+    /* max-width: 1200px; */
+    /* max-width: 100%; */
+    /* margin: 0 auto; */
+    margin-bottom: 50px;
+    /* margin-right: 50px; */
+    /* border: 2px dashed blue; */
 }
 
 .tabcontainer {
     display: flex;
-    width: 1130px;
+    /* width: 1130px; */
     margin: 0 auto;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, .25)
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .25);
+    /* border: 1px solid gold; */
 }
 
 .tabcontent {
-    width: 850px;
-    position: relative
+    /* width: 850px; */
+    width: 100vw;
+    /* height: 60vh; */
+    position: relative;
+    /* border: 3px solid green; */
 }
 
 .tabcontent img {
@@ -35,48 +40,53 @@
 
 .tabcontent__descr {
     position: absolute;
-    top: 300px;
-    right: -177px;
-    width: 550px;
-    height: 359px;
-    background: rgba(251, 254, 93, .8);
-    padding: 50px;
-    font-size: 24px;
+    width: 100%;
+    background: #0370577c;
+    padding: 20px;
+    font-size: 20px;
     font-weight: 300;
-    line-height: 36px;
-    color: rgba(0, 0, 0, .7)
+    line-height: 30px;
+    color: rgba(0, 0, 0, .7);
+    text-align: justify;
 }
 
 .tabheader {
     width: 280px;
+    height: 70vh;
     padding: 35px 30px;
     background-color: #fff
 }
 
-.tabheader h3 {
+/* .tabheader h3 {
     font-weight: 700;
-    font-size: 16px
-}
+    font-size: 16px;
+    color: #747980;
+    text-decoration: underline;
+} */
 
 .tabheader__items {
-    margin-top: 35px;
+    margin-top: 10px;
     padding-left: 26px;
-    border-left: 1px solid #000
+    border-left: 1px solid #747980
 }
 
 .tabheader__item {
     font-weight: 700;
     font-size: 18px;
     font-weight: 300;
-    margin-top: 10px;
-    color: rgba(0, 0, 0, .6);
+    margin-top: 15px;
+    color: #747980;
     cursor: pointer;
     transition: .3s all
 }
 
+.tabheader__item:hover {
+    font-weight: bold;
+}
+
 .tabheader__item_active {
-    color: #000;
-    font-size: 22px;
+    color: teal;
+    font-size: 20px;
     font-weight: 700
 }
 

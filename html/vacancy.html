@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Инженерное бюро "Цаммит"</title>
     <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/menu.css">
 </head>
 <body>
     <header>
@@ -23,13 +24,27 @@
             </div>
         </div>
 
-        <nav>
+        <div class="menu-burger__header">
+            <span></span>
+        </div>
+
+        <!-- <nav>
 			<a href="index.html">О КОМПАНИИ</a>
 			<a href="systems.html">ИНЖЕНЕРНЫЕ СИСТЕМЫ</a>
 			<a href="servises.html">УСЛУГИ</a>
 			<a href="projects.html">ПРОЕКТЫ</a>
 			<a href="#" class="active">ВАКАНСИИ</a>
-		</nav>
+		</nav> -->
+
+        <nav class="header__nav">
+            <ul class="menu header__menu">
+                <li><a href="index.html">О КОМПАНИИ</a></li>
+                <li><a href="systems.html">ИНЖЕНЕРНЫЕ СИСТЕМЫ</a></li>
+                <li><a href="servises.html">УСЛУГИ</a></li>
+                <li><a href="projects.html">ПРОЕКТЫ</a></li>
+                <li><a href="#" class="active">ВАКАНСИИ</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="baner">
@@ -41,6 +56,9 @@
     <footer>
         <h4>ООО «Инженерное бюро Цаммит» с 2005г.</h4>     
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/menu.js"></script> 
 
 </body>
 </html>
