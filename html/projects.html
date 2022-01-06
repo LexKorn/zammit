@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Инженерное бюро "Цаммит"</title>
     <link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/accordion.css">
 </head>
 <body>
@@ -24,13 +25,19 @@
             </div>
         </div>
 
-        <nav>
-			<a href="index.html">О КОМПАНИИ</a>
-			<a href="systems.html">ИНЖЕНЕРНЫЕ СИСТЕМЫ</a>
-			<a href="servises.html">УСЛУГИ</a>
-			<a href="#" class="active">ПРОЕКТЫ</a>
-			<a href="vacancy.html">ВАКАНСИИ</a>
-		</nav>
+        <div class="menu-burger__header">
+            <span></span>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="menu header__menu">
+                <li><a href="index.html">О КОМПАНИИ</a></li>
+                <li><a href="systems.html">ИНЖЕНЕРНЫЕ СИСТЕМЫ</a></li>
+                <li><a href="servises.html">УСЛУГИ</a></li>
+                <li><a href="#" class="active">ПРОЕКТЫ</a></li>
+                <li><a href="vacancy.html">ВАКАНСИИ</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -154,7 +161,8 @@
         <h4>ООО «Инженерное бюро Цаммит» с 2005г.</h4>     
     </footer>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/menu.js"></script> 
     <script src="../js/accordion.js"></script>
 </body>
 </html>

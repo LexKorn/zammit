@@ -4,32 +4,21 @@ main {
     padding-bottom: 100px;
     position: relative;
     margin-bottom: 50px;
-    /* border: 1px solid red;     */
 }
 
 .container {
-    /* max-width: 1200px; */
-    /* max-width: 100%; */
-    /* margin: 0 auto; */
     margin-bottom: 50px;
-    /* margin-right: 50px; */
-    /* border: 2px dashed blue; */
 }
 
 .tabcontainer {
     display: flex;
-    /* width: 1130px; */
     margin: 0 auto;
     box-shadow: 0 4px 30px rgba(0, 0, 0, .25);
-    /* border: 1px solid gold; */
 }
 
 .tabcontent {
-    /* width: 850px; */
     width: 100vw;
-    /* height: 60vh; */
     position: relative;
-    /* border: 3px solid green; */
 }
 
 .tabcontent img {
@@ -56,13 +45,6 @@ main {
     padding: 35px 30px;
     background-color: #fff
 }
-
-/* .tabheader h3 {
-    font-weight: 700;
-    font-size: 16px;
-    color: #747980;
-    text-decoration: underline;
-} */
 
 .tabheader__items {
     margin-top: 10px;
