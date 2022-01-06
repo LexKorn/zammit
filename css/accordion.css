@@ -13,7 +13,7 @@ h1 {
   text-align: center;
 }
 
-.all {
+/* .all {
   text-align: center;
 }
 .all input[type="checkbox"] {
@@ -39,7 +39,7 @@ h1 {
 }
 .all label:before {
   content: 'Показать всё';
-}
+} */
 
 .accordion {
   position: relative;
@@ -165,4 +165,20 @@ ul {
   margin-top: 15px;
   margin-left: 100px;
   height: 350px;
+}
+
+.accordion .trigger .content .item {
+  margin-top: 15px;
+  margin-left: 100px;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.accordion .trigger .content .item img {
+  /* margin-top: 15px;
+  margin-left: 100px; */
+  height: 150px;
+  /* width: 200px; */
 }
