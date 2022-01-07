@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/accordion.css">
+	<link rel="stylesheet" href="../css/modal.css">
+	<link rel="stylesheet" href="../css/slider.css">
 </head>
 <body>
     <header>
@@ -48,14 +50,20 @@
 					Объекты здравоохранения, образования, культуры и спорта <i></i>
 				</label>
 				<div class="content">
-					<div class="item">
-						<img src="../img/projects_mcd.jpg" alt="">
-						<h4>Павильон Московских центральных диаметров (МЦД)</h4>
-					</div>
-					<div class="item">
-						<img src="../img/projects_ice-palace.jpg" alt="">
-						<h4>Ледовый дворец</h4>
-					</div>					
+					<div class="projects">
+						<div class="item">
+							<img src="../img/projects_mcd_1.jpg" alt="" id="mcd">
+							<h5>Павильон Московских центральных диаметров (МЦД)</h5>
+						</div>
+						<div class="item">
+							<img src="../img/projects_ice-palace_1.jpg" alt="" id="ice">
+							<h5>Ледовый дворец</h5>
+						</div>		
+						<div class="item">
+							<img src="../img/projects_gz_pushkin.png" alt="" id="gmii">
+							<h5>Государственный музей изобразительных искусств им. А.С. Пушкина</h5>
+						</div>
+					</div>									
 				</div>
 			</div>
 			
@@ -155,19 +163,226 @@
 				</div>
 			</div>
 		</div> 
-		
-		<!-- <div class="all">
-			<input type="checkbox" name="all" id="all" />
-			<label for="all"></label>
-		</div>  -->
     </main>
 
     <footer>
         <h4>ООО «Инженерное бюро Цаммит» с 2005г.</h4>     
     </footer>
 
+	<div class="modal" id="modal__mcd">
+        <div class="modal__dialog">			
+            <div class="modal__content">
+				<div class="discription">
+					<h4>Павильон Московских центральных диаметров (МЦД)</h4>
+					<p>Строительство демонстрационного павильона на площади Киевского вокзала</p>
+					<p>Москва, Россия</p>
+				</div>
+				<div class="modal__flex">
+					<div class="slider">
+						<div class="offer__slider">
+							<div class="offer__slider-counter">
+								<div class="offer__slider-prev">
+									<img src="../icons/left.svg" alt="prev">
+								</div>
+								<span id="current">01</span>
+								/
+								<span id="total">04</span>
+								<div class="offer__slider-next">
+									<img src="../icons/right.svg" alt="next">
+								</div>
+							</div>
+							<div class="offer__slider-wrapper">
+								<div class="offer__slider-inner">
+									<div class="offer__slide">
+										<img src="../img/projects_mcd_1.jpg" alt="image">
+									</div>
+									<div class="offer__slide">
+										<img src="../img/projects_mcd_2.jpg" alt="image">
+									</div>
+									<div class="offer__slide">
+										<img src="../img/projects_mcd_3.jpg" alt="image">
+									</div>
+									<div class="offer__slide">
+										<img src="../img/projects_mcd_4.jpg" alt="image">
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<table>
+						<tbody>
+							<tr class="gray">
+								<th>Заказчик</th>
+								<td>OАO «Центральная ППК»</td>
+							</tr>
+							<tr>
+								<th>Генеральный проектировщик</th>
+								<td>ООО «Империя Строй»</td>
+							</tr>
+							<tr class="gray">
+								<th>Сроки  выполнения</th>
+								<td>2018</td>
+							</tr>
+							<tr>
+								<th>Объемы проектирования</th>
+								<td>Разработка концепта инженерных  систем: <br><br> -вентиляция и кондиционирование <br><br> -отопление и электрооборудование <br><br> -слаботочные системы</td>
+							</tr>
+							<tr class="gray">
+								<th>Проектные данные</th>
+								<td>Общая площадь:  600 м²</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>			
+				<div data-close class="modal__close">&times;</div>				
+            </div>			
+        </div>
+    </div>
+
+	<div class="modal" id="modal__ice">
+        <div class="modal__dialog">			
+            <div class="modal__content">
+				<div class="discription">
+					<h4>Ледовый дворец</h4>
+					<p>Строительство спортивно-тренировочного центра</p>
+					<p>Москва, Россия</p>
+				</div>
+				<div class="modal__flex">
+					<div class="slider">
+						<div class="offer__slider">
+							<div class="offer__slider-counter">
+								<div class="offer__slider-prev">
+									<img src="../icons/left.svg" alt="prev">
+								</div>
+								<span id="current">01</span>
+								/
+								<span id="total">04</span>
+								<div class="offer__slider-next">
+									<img src="../icons/right.svg" alt="next">
+								</div>
+							</div>
+							<div class="offer__slider-wrapper">
+								<div class="offer__slider-inner">
+									<div class="offer__slide">
+										<img src="../img/projects_ice-palace_1.jpg" alt="image">
+									</div>
+									<div class="offer__slide">
+										<img src="../img/projects_ice-palace_2.jpg" alt="image">
+									</div>
+									<div class="offer__slide">
+										<img src="../img/projects_ice-palace_3.jpg" alt="image">
+									</div>
+									<div class="offer__slide">
+										<img src="../img/projects_ice-palace_4.jpg" alt="image">
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<table>
+						<tbody>
+							<tr class="gray">
+								<th>Заказчик</th>
+								<td>OOO «АПИА-СПОРТ»</td>
+							</tr>
+							<tr>
+								<th>Генеральный проектировщик</th>
+								<td>ООО «АКРО-М»</td>
+							</tr>
+							<tr class="gray">
+								<th>Сроки  выполнения</th>
+								<td>2017</td>
+							</tr>
+							<tr>
+								<th>Объемы проектирования</th>
+								<td>Разработка проектной и рабочей документации инженерных  систем: <br><br> -вентиляция и кондиционирование <br><br> -отопления и теплоснабжения <br><br> -водоснабжения и водоотведения <br><br> -электрооборудования <br><br> -сетей связи <br><br> - наружных сетей инженерных систем</td>
+							</tr>
+							<tr class="gray">
+								<th>Проектные данные</th>
+								<td>Общая площадь:  7.676 м²</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>			
+				<div data-close class="modal__close">&times;</div>				
+            </div>			
+        </div>
+    </div>
+
+	<div class="modal" id="modal__gmii">
+        <div class="modal__dialog">			
+            <div class="modal__content">
+				<div class="discription">
+					<h4>Государственный музей изобразительных искусств им. А.С. Пушкина</h4>
+					<p>Комплексная реконструкция, реставрация и приспособление под современные музейные технологии главного здания</p>
+					<p>Москва, Россия</p>
+				</div>
+				<div class="modal__flex">
+					<div class="slider">
+						<div class="offer__slider">
+							<div class="offer__slider-counter">
+								<div class="offer__slider-prev">
+									<img src="../icons/left.svg" alt="prev">
+								</div>
+								<span id="current">01</span>
+								/
+								<span id="total">04</span>
+								<div class="offer__slider-next">
+									<img src="../icons/right.svg" alt="next">
+								</div>
+							</div>
+							<div class="offer__slider-wrapper">
+								<div class="offer__slider-inner">
+									<div class="offer__slide">
+										<img src="../img/projects_ice-palace_1.jpg" alt="image">
+									</div>
+									<div class="offer__slide">
+										<img src="../img/projects_ice-palace_2.jpg" alt="image">
+									</div>
+									<div class="offer__slide">
+										<img src="../img/projects_ice-palace_3.jpg" alt="image">
+									</div>
+									<div class="offer__slide">
+										<img src="../img/projects_ice-palace_4.jpg" alt="image">
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<table>
+						<tbody>
+							<tr class="gray">
+								<th>Заказчик</th>
+								<td>OOO «АПИА-СПОРТ»</td>
+							</tr>
+							<tr>
+								<th>Генеральный проектировщик</th>
+								<td>ООО «АКРО-М»</td>
+							</tr>
+							<tr class="gray">
+								<th>Сроки  выполнения</th>
+								<td>2017</td>
+							</tr>
+							<tr>
+								<th>Объемы проектирования</th>
+								<td>Разработка проектной и рабочей документации инженерных  систем: <br><br> -вентиляция и кондиционирование <br><br> -отопления и теплоснабжения <br><br> -водоснабжения и водоотведения <br><br> -электрооборудования <br><br> -сетей связи <br><br> - наружных сетей инженерных систем</td>
+							</tr>
+							<tr class="gray">
+								<th>Проектные данные</th>
+								<td>Общая площадь:  7.676 м²</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>			
+				<div data-close class="modal__close">&times;</div>				
+            </div>			
+        </div>
+    </div>
+
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="../js/menu.js"></script> 
     <script src="../js/accordion.js"></script>
+	<script src="../js/modal.js"></script>
+	<script src="../js/slider.js"></script>
 </body>
 </html>
