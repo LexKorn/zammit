@@ -94,3 +94,13 @@ footer {
     text-align: center;
     color: #747980;
 }
+.sign_in {
+    text-align: center;
+    margin-left: 40px;
+    width: 70px;
+    color: #747980;    
+}
+.sign_in:hover {
+    color: teal;
+    cursor: pointer;
+}

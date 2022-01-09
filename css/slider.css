@@ -46,3 +46,8 @@
     height: 100%;
     object-fit: cover
 }
+
+
+.hide {
+    display: none
+}

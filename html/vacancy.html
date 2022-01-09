@@ -7,6 +7,7 @@
     <title>Инженерное бюро "Цаммит"</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/vacancy.css">
 </head>
 <body>
     <header>
@@ -44,14 +45,27 @@
     </div>
     <br>
     <h3 class="vacancy">Здесь будут размещены актуальные вакансии</h3>
+    <h4 class="sign_in">Sign in</h4>
 		
 
     <footer>
         <h4>ООО «Инженерное бюро Цаммит» с 2005г.</h4>     
     </footer>
 
+    <div class="modal">
+        <div class="modal__dialog">			
+            <div class="modal__content">
+                <button class="add__vacancy">Добавить вакансию</button>
+				<button class="edit__vacancy">Редактировать вакансию</button>
+                <button class="remove__vacancy">Удалить вакансию</button>						
+				<div data-close class="modal__close">&times;</div>				
+            </div>			
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="../js/menu.js"></script> 
+    <script src="../js/vacancy.js"></script>
 
 </body>
 </html>
