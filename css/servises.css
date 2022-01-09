@@ -17,8 +17,8 @@ main {
 }
 
 .tabcontent {
-    width: 100vw;
-    position: relative;
+    width: 100%;
+    height: 50vh;
 }
 
 .tabcontent img {
@@ -28,9 +28,8 @@ main {
 }
 
 .tabcontent__descr {
-    position: absolute;
     width: 100%;
-    background: #0370577c;
+    /* background: #0370577c; */
     padding: 20px;
     font-size: 20px;
     font-weight: 300;

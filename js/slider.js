@@ -1,9 +1,12 @@
+'use strict';
+
 function slider() {
-    const slides = document.querySelectorAll('.offer__slide'),
-          current = document.querySelector('#current'),
-          total = document.querySelector('#total'),
-          btnPrev = document.querySelector('.offer__slider-prev'),
-          btnNext = document.querySelector('.offer__slider-next');
+  const activeModal = document.querySelector('.activeModal'),
+        slides = activeModal.querySelectorAll('.offer__slide'),
+        current = activeModal.querySelector('#current'),
+        total = activeModal.querySelector('#total'),
+        btnPrev = activeModal.querySelector('.offer__slider-prev'),
+        btnNext = activeModal.querySelector('.offer__slider-next');
 
     let activeIndex = 0;
 

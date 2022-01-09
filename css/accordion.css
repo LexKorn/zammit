@@ -162,18 +162,16 @@ h1 {
 
 
 
-.content .projects {
-  display: flex;
-  margin-bottom: 70px;
-}
+/* .content .projects {
+  margin-bottom: 25px;
+} */
 
 .content .projects .item {
-  margin-top: 15px;
-  margin-left: 100px;
+  float:left; 
   height: 200px;
-  width: 200px;
+  width: 200px;  
+  margin: 25px 0 25px 10%;
   text-align: center;
-  /* border: 1px solid red; */
 }
 
 .content .projects .item img {
