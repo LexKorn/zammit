@@ -2,91 +2,91 @@
 
 function vacancy() {    
     const sign = document.querySelector('.sign_in'),
-          modalWindow = document.querySelector('.modal');
+          modalMenu = document.querySelector('#modal__menu');
 
     sign.addEventListener('click', () => {
-        const pswd = prompt('Введите пароль', '');
+        let pswd = prompt('Введите пароль', '');
 
-        if (pswd === '123') {
-            modalWindow.style.display = "block";
-        }
-    });
-
-
-    
-
-    function closeModal() {
-        modalWindow.style.display = "none";
-    }
-
-    document.addEventListener('click', (e) => {
-        if (modalWindow.style.display === "block") {
-            // if (e.target == modalWindow || e.target.getAttribute('data-close') === '') {
-            if (e.target.getAttribute('data-close') === '') {
-                closeModal();
+        for (let i = 0; i < 1; i++) {
+            if (pswd === '1') {
+                modalMenu.style.display = "block";
+            } else if (pswd == null) {
+                i++;
+            } else {
+                pswd = prompt('Неверный пароль. Попробуйте ещё раз', '');
+                i--;
             }
-        }              
+        }
+    });    
+
+///////////////
+    const btns = document.querySelectorAll('button'),
+          modalWindows = document.querySelectorAll('.modal'),
+          modalAdd = document.querySelector('#modal__add'),
+          modalEdit = document.querySelector('#modal__edit'),
+          modalRemove = document.querySelector('#modal__remove');
+    
+    btns.forEach(item => {
+        item.addEventListener('click', (e) => {
+            switch (e.target.getAttribute('id')) {
+                case 'add':
+                    modalAdd.style.display = "block";
+                    modalAdd.classList.add('activeModal');
+                    break;
+                case 'edit':
+                    modalEdit.style.display = "block";
+                    modalEdit.classList.add('activeModal');
+                    break;
+                case 'remove':
+                    modalRemove.style.display = "block";
+                    modalRemove.classList.add('activeModal');
+                    break;
+            } 
+        });        
+    }); 
+    
+    function closeModal() {
+        modalWindows.forEach(item => {
+            item.style.display = "none";
+            item.classList.remove('activeModal');
+        });   
+    }
+    
+    document.addEventListener('click', (e) => {
+        modalWindows.forEach(item => {
+            if (item.style.display === "block") {
+                if (e.target.getAttribute('data-close') === '') {
+                    closeModal();
+                }
+            }  
+        });              
     });
+////////////////
 
-    // const items = document.querySelectorAll('.item'),
-    //       modalWindows = document.querySelectorAll('.modal'),
-    //       modalMCD = document.querySelector('#modal__mcd'),
-    //       modalIcePalace = document.querySelector('#modal__ice'),
-    //       modalGMII = document.querySelector('#modal__gmii'),
-    //       modalDRVC = document.querySelector('#modal__drvc'),
-    //       modalMMK = document.querySelector('#modal__mmk');
-    
-    // items.forEach(item => {
-    //     item.addEventListener('click', (e) => {
-    //         switch (e.target.getAttribute('id')) {
-    //             case 'mcd':
-    //                 modalMCD.style.display = "block";
-    //                 modalMCD.classList.add('activeModal');
-    //                 break;
-    //             case 'ice':
-    //                 modalIcePalace.style.display = "block";
-    //                 modalIcePalace.classList.add('activeModal');
-    //                 break;
-    //             case 'gmii':
-    //                 modalGMII.style.display = "block";
-    //                 modalGMII.classList.add('activeModal');
-    //                 break;
-    //             case 'drvc':
-    //                 modalDRVC.style.display = "block";
-    //                 modalDRVC.classList.add('activeModal');
-    //                 break;
-    //             case 'mmk':
-    //                 modalMMK.style.display = "block";
-    //                 modalMMK.classList.add('activeModal');
-    //                 break;
-    //         } 
-    //     });        
-    // }); 
+    const form =document.querySelector('form'),
+          vacancyList = document.querySelector('.vacancy_list'),
+          vacancyTitle = document.querySelector('.vacancy_title'),
+          inputName = document.querySelector('[name="name"]'),
+          inputDescr = document.querySelector('[name="describe"]');
 
-    
-    // function closeModal() {
-    //     modalWindows.forEach(item => {
-    //         item.style.display = "none";
-    //         item.classList.remove('activeModal');
-    //     });   
-    // }
-    
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
 
-    // document.addEventListener('keydown', (e) => {
-    //     if (e.key === 'Escape') {
-    //         closeModal();
-    //     } 
-    // });
+        let vacancyName = inputName.value,
+            vacancyDescr = inputDescr.value;
+            
+        vacancyList.innerHTML += `
+            <li>
+                <div>
+                    <h3>${vacancyName}</h3>
+                    <p>${vacancyDescr}</p>
+                </div>
+            </li>
+        `;  
+        vacancyTitle.textContent = "";
 
-
-    // document.addEventListener('click', (e) => {
-    //     modalWindows.forEach(item => {
-    //         if (item.style.display === "block") {
-    //             if (e.target == item || e.target.getAttribute('data-close') === '') {
-    //                 closeModal();
-    //             }
-    //         }  
-    //     });              
-    // });
+        e.target.reset();
+        closeModal();
+    });
 }
 vacancy();

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/accordion.css">
+	<link rel="stylesheet" href="../css/slider.css">
 </head>
 <body>
     <header>
@@ -48,9 +49,42 @@
 					Водоснабжение и канализация <i></i>
 				</label>
 				<div class="content">
-					<img src="../img/systems_sa_1.JPG" alt="">
-					<p>Система водоснабжения - это совокупность зданий, сооружений и инженерных сетей, предназначенных для приема воды из источника водозабора, ее подготовки (очистки) и подачи потребителям.</p> 
-					<p>Система канализации - это специальная система трубопровода по сбору и отведению сточных вод до точки утилизации.</p>
+					<!-- <img src="../img/systems_sa_1.JPG" alt=""> -->
+					<!-- <p>Система водоснабжения - это совокупность зданий, сооружений и инженерных сетей, предназначенных для приема воды из источника водозабора, ее подготовки (очистки) и подачи потребителям.</p> 
+					<p>Система канализации - это специальная система трубопровода по сбору и отведению сточных вод до точки утилизации.</p> -->
+
+
+					<div class="modal__flex">
+						<div class="slider">
+							<div class="offer__slider">
+								<div class="offer__slider-counter">
+									<div class="offer__slider-prev">
+										<img src="../icons/left.svg" alt="prev">
+									</div>
+									<span id="current">01</span>
+									/
+									<span id="total">04</span>
+									<div class="offer__slider-next">
+										<img src="../icons/right.svg" alt="next">
+									</div>
+								</div>
+								<div class="offer__slider-wrapper">
+									<div class="offer__slider-inner">
+										<div class="offer__slide">
+											<img src="../img/systems_sa_1.JPG" alt="image">
+										</div>
+										<div class="offer__slide">
+											<img src="../img/systems_sa_2.JPG" alt="image">
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="describe">
+							<p>Система водоснабжения - это совокупность зданий, сооружений и инженерных сетей, предназначенных для приема воды из источника водозабора, ее подготовки (очистки) и подачи потребителям.</p> 
+							<p>Система канализации - это специальная система трубопровода по сбору и отведению сточных вод до точки утилизации.</p>
+						</div>
+					</div>	
 				</div>
 			</div>
 			
@@ -157,12 +191,7 @@
 					<p>Внутренний противопожарный водопровод (ВПВ) – сложная система обеспечения противопожарной безопасности внутри общественных зданий. Это автономный трубопровод, который обеспечивается разного рода техническим оснащением.</p> 	
 				</div>
 			</div>
-		</div> 
-		
-		<!-- <div class="all">
-			<input type="checkbox" name="all" id="all" />
-			<label for="all"></label>
-		</div>  -->
+		</div> 		
     </main>
 
     <footer>
@@ -172,5 +201,6 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="../js/menu.js"></script> 
     <script src="../js/accordion.js"></script>
+	<script src="../js/slider.js"></script>
 </body>
 </html>

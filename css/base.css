@@ -79,28 +79,3 @@ footer {
     text-align: center;
     color: #ffff;
 }
-
-
-.baner img {
-    /* height: 30vh;     */
-    width: 75vw;
-}
-.baner {
-    display: flex;
-    justify-content: center;
-}
-
-.vacancy {
-    text-align: center;
-    color: #747980;
-}
-.sign_in {
-    text-align: center;
-    margin-left: 40px;
-    width: 70px;
-    color: #747980;    
-}
-.sign_in:hover {
-    color: teal;
-    cursor: pointer;
-}
