@@ -16,7 +16,9 @@ function modal() {
           modalOlgino = document.querySelector('#modal__olgino'),
           modalVolga = document.querySelector('#modal__volga'),
           modalPNK = document.querySelector('#modal__pnk'),
-          modalSouth = document.querySelector('#modal__south');
+          modalSouth = document.querySelector('#modal__south'),
+          modalElyzovo = document.querySelector('#modal__elyzovo'),
+          modalSignal = document.querySelector('#modal__signal');
     
     items.forEach(item => {
         item.addEventListener('click', (e) => {
@@ -76,6 +78,14 @@ function modal() {
                 case 'south':
                     modalSouth.style.display = "block";
                     modalSouth.classList.add('activeModal');
+                    break;
+                case 'elyzovo':
+                    modalElyzovo.style.display = "block";
+                    modalElyzovo.classList.add('activeModal');
+                    break;
+                case 'signal':
+                    modalSignal.style.display = "block";
+                    modalSignal.classList.add('activeModal');
                     break;
             } 
         showSlideCounter();
