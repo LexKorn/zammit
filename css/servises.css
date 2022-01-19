@@ -6,9 +6,9 @@ main {
     margin-bottom: 50px;
 }
 
-.container {
+/* .container {
     margin-bottom: 50px;
-}
+} */
 
 .tabcontainer {
     display: flex;
@@ -18,7 +18,7 @@ main {
 
 .tabcontent {
     width: 100%;
-    height: 50vh;
+    height: 50%;
 }
 
 .tabcontent img {
@@ -73,4 +73,14 @@ main {
 
 .hide {
     display: none
+}
+
+@media(max-width: 800px) {
+    .tabcontent img {
+        display: none;
+    }
+
+    .tabcontent__descr {
+        text-align: left;
+    }
 }
