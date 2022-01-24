@@ -1,8 +1,9 @@
 
 .wrapper {
-    margin: 20px;
-    /* background-color: grey; */
-    height: 35vh;
+    margin: 0 0 20px 0;
+    background-color: rgb(90, 98, 105);
+    /* background-color: slategray; */
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,17 +16,18 @@
 }
 
 .slide {
-    height: 35vh;
-    border-radius: 10px;
+    height: 39vh;
+    border-radius: 8px;
     margin: 5px;
     cursor: pointer;
     color: #ffff;
-    flex: 1;
-    background-size: cover;
+    flex: 2;
+    background-size:contain;
+    /* background-size: cover; */
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    transition: all 500ms ease-in-out;
+    transition: all 700ms ease-in-out;
 }
 
 .slide.active {

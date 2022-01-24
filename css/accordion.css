@@ -13,34 +13,6 @@ h1 {
   text-align: center;
 }
 
-/* .all {
-  text-align: center;
-}
-.all input[type="checkbox"] {
-  display: none;
-}
-.all input[type="checkbox"]:checked + label {
-  background-color: #2980b9;
-  color: white;
-}
-.all input[type="checkbox"]:checked + label:before {
-  content: 'Свернуть..';
-}
-.all label {
-  position: relative;
-  margin: 0;
-  padding: 5px 20px;
-  font-size: 14px;
-  font-weight: 300;
-  color: #2980b9;
-  background-color: white;
-  border: 1px solid #2980b9;
-  border-radius: 99px;
-}
-.all label:before {
-  content: 'Показать всё';
-} */
-
 .accordion {
   position: relative;
   width: 95%;
@@ -184,4 +156,11 @@ h1 {
 .content .projects .item img:hover {
   height: 105%;
   width: 105%;
+}
+
+
+/* for systems */
+.content ul {
+  margin-left: 50px;
+  padding-left: 30px;
 }
