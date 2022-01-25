@@ -20,7 +20,7 @@
 
 .vacancy_list li {
     margin-top: 20px;
-    list-style-type: none;
+    /* list-style-type: none; */
 }
 
 .vacancy_list li p {

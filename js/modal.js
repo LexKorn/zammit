@@ -14,11 +14,14 @@ function modal() {
           modalFive = document.querySelector('#modal__five'),
           modalGerclia = document.querySelector('#modal__gerclia'),
           modalOlgino = document.querySelector('#modal__olgino'),
-          modalVolga = document.querySelector('#modal__volga'),
+          modalTsvetnoy = document.querySelector('#modal__tsvetnoy'),
           modalPNK = document.querySelector('#modal__pnk'),
           modalSouth = document.querySelector('#modal__south'),
           modalElyzovo = document.querySelector('#modal__elyzovo'),
-          modalSignal = document.querySelector('#modal__signal');
+          modalSignal = document.querySelector('#modal__signal'),
+          modal4Seasons = document.querySelector('#modal__4seasons'),
+          modalIstra = document.querySelector('#modal__istra'),
+          modalButick = document.querySelector('#modal__butick');
     
     items.forEach(item => {
         item.addEventListener('click', (e) => {
@@ -67,9 +70,9 @@ function modal() {
                     modalOlgino.style.display = "block";
                     modalOlgino.classList.add('activeModal');
                     break;
-                case 'volga':
-                    modalVolga.style.display = "block";
-                    modalVolga.classList.add('activeModal');
+                case 'tsvetnoy':
+                    modalTsvetnoy.style.display = "block";
+                    modalTsvetnoy.classList.add('activeModal');
                     break;
                 case 'pnk':
                     modalPNK.style.display = "block";
@@ -86,6 +89,18 @@ function modal() {
                 case 'signal':
                     modalSignal.style.display = "block";
                     modalSignal.classList.add('activeModal');
+                    break;
+                case 'butick':
+                    modalButick.style.display = "block";
+                    modalButick.classList.add('activeModal');
+                    break;
+                case '4seasons':
+                    modal4Seasons.style.display = "block";
+                    modal4Seasons.classList.add('activeModal');
+                    break;
+                case 'istra':
+                    modalIstra.style.display = "block";
+                    modalIstra.classList.add('activeModal');
                     break;
             } 
         showSlideCounter();

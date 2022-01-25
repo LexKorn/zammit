@@ -130,6 +130,7 @@ h1 {
 #checkbox-10:checked ~ .content {
   max-height: 500px;
   transition: max-height 500ms ease-in-out;
+  /* padding-bottom: 20px; */
 }
 
 
@@ -157,6 +158,11 @@ h1 {
   height: 105%;
   width: 105%;
 }
+
+/* .space {
+  height: 20px;
+  border: 1px solid red;
+} */
 
 
 /* for systems */
