@@ -21,6 +21,12 @@ function modal() {
           modalSignal = document.querySelector('#modal__signal'),
           modal4Seasons = document.querySelector('#modal__4seasons'),
           modalIstra = document.querySelector('#modal__istra'),
+          modalNabokov = document.querySelector('#modal__nabokov'),
+          modalNikolskaya = document.querySelector('#modal__nikolskaya'),
+          modalReef = document.querySelector('#modal__reef'),
+          modalOstozenka = document.querySelector('#modal__ostozenka'),
+          modalBarviha = document.querySelector('#modal__barviha'),
+          modalKiev = document.querySelector('#modal__kiev'),
           modalButick = document.querySelector('#modal__butick');
     
     items.forEach(item => {
@@ -101,6 +107,30 @@ function modal() {
                 case 'istra':
                     modalIstra.style.display = "block";
                     modalIstra.classList.add('activeModal');
+                    break;
+                case 'nabokov':
+                    modalNabokov.style.display = "block";
+                    modalNabokov.classList.add('activeModal');
+                    break;
+                case 'nikolskaya':
+                    modalNikolskaya.style.display = "block";
+                    modalNikolskaya.classList.add('activeModal');
+                    break;
+                case 'reef':
+                    modalReef.style.display = "block";
+                    modalReef.classList.add('activeModal');
+                    break;
+                case 'ostozenka':
+                    modalOstozenka.style.display = "block";
+                    modalOstozenka.classList.add('activeModal');
+                    break;
+                case 'barviha':
+                    modalBarviha.style.display = "block";
+                    modalBarviha.classList.add('activeModal');
+                    break;
+                case 'kiev':
+                    modalKiev.style.display = "block";
+                    modalKiev.classList.add('activeModal');
                     break;
             } 
         showSlideCounter();
