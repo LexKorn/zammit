@@ -33,28 +33,3 @@
 .slide.active {
     flex: 14;
 }
-
-.slide h3 {
-    position:absolute;
-    font-size: 20px;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    opacity: 0;
-}
-
-.slide.active h3 {
-    opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
-}
-
-
-
-footer {
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #747980;
-    text-align: center;
-    color: #ffff;
-}

@@ -48,8 +48,8 @@
     margin-left: 2%;
     width: 30%;
 } */
-th{width:200px; padding:5px 10px; font-weight:normal; text-align:left; vertical-align:top;}
-td{max-width:250px; padding:5px 0; font-weight:normal; text-align:left; vertical-align:top;}
+th{width:200px; padding:5px 10px 5px 10px; font-weight:normal; text-align:left; vertical-align:top;}
+td{max-width:250px; padding:5px 0 5px 10px; font-weight:normal; text-align:left; vertical-align:top;}
 .gray *{background:#e3e7d9;}
 
 .slider {

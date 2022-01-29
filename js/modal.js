@@ -27,6 +27,7 @@ function modal() {
           modalOstozenka = document.querySelector('#modal__ostozenka'),
           modalBarviha = document.querySelector('#modal__barviha'),
           modalKiev = document.querySelector('#modal__kiev'),
+          modalVwk = document.querySelector('#modal__vwk'),
           modalButick = document.querySelector('#modal__butick');
     
     items.forEach(item => {
@@ -131,6 +132,10 @@ function modal() {
                 case 'kiev':
                     modalKiev.style.display = "block";
                     modalKiev.classList.add('activeModal');
+                    break;
+                case 'vwk':
+                    modalVwk.style.display = "block";
+                    modalVwk.classList.add('activeModal');
                     break;
             } 
         showSlideCounter();
